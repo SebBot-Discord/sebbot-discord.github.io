@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Seb Bot</title>
+<title>Commands - Seb Bot</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<script>
+function showNSFW(){
+	document.getElementById("nsfwcmds").setAttribute("style", "");
+	document.getElementById("shownsfwbtn").setAttribute("style", "display: none;");
+}
+</script>
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 .boxhead a {
     color: #FFFFFF;
     text-decoration: none;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #666699;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.btn {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    padding: 14px 40px;
+    transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+}
+.btn:hover {
+    background-color: black;
+    color: white;
 }
 </style>
 </head>
@@ -22,8 +55,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 <!-- Header -->
 <header class="w3-container w3-center w3-padding-32"> 
-  <h1><b>SEB BOT</b></h1>
-  <p>Meet <span class="w3-tag">Seb Bot</span> a multi purpose discord bot full of fun</p>
+  <h1><b>COMMANDS</b></h1>
 </header>
 
 <!-- Grid -->
@@ -34,18 +66,147 @@ and is wrapped around the whole page content, except for the footer in this exam
   <!-- Blog entry -->
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
-  <center><img src="https://images-ext-2.discordapp.net/external/x8JfnsVYSKcsmCINfKw0x4YTLWWbHNTrCgIuyWtxQrs/https/cdn.discordapp.com/avatars/408718297400475668/c7b9be183d4cf2029912533e3afc2e69.png" alt="Norway" style="width:25%; height: 25%;"></center>
-    <div class="w3-container">
-      <h5>About</h5>
-    </div>
-
-    <div class="w3-container">
-      <p>Seb Bot is an open source, multi-purpose discord bot with plenty of fun commands ranging from cute cat pics, to making cows repeat sentences, Seb Bot has it all. You can see a full list of commands <strong><a href="/commands" style="text-decoration: none; color: blue;">here</a></strong> and invite the bot by clicking "Invite"</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><button href="#" onclick="u='https://discordapp.com/api/oauth2/authorize?client_id=408718297400475668&permissions=67160064&scope=bot';window.open(u,u,u);" class="w3-button w3-padding-large w3-white w3-border"><b>Invite</b></button></p>
-        </div>
-      </div>
+    <div>
+      <p>&nbsp;&nbsp;<strong>NOTE:</strong> Commands with an asterisk ("*") in front of them are deprecated and may not work properly</p>
+      <table>
+        <tr>
+          <th>Command</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Seb, invite</td>
+          <td>Get the link to invite Seb Bot to your server</td>
+        </tr>
+        <tr>
+          <td>Seb, cowsay {message}</td>
+          <td>Make the cow say {message}!</td>
+        </tr>
+        <tr>
+          <td>*Seb, cryptic {message}</td>
+          <td>Encrypts {message} in emoji!</td>
+        </tr>
+        <tr>
+          <td>Seb, pirate {text}</td>
+          <td>Translates {text} to pirate speak</td>
+        </tr>
+        <tr>
+          <td>Seb, xkcd</td>
+          <td>Get an XKCD comic</td>
+        </tr>
+        <tr>
+          <td>Seb, tell me a joke</td>
+          <td>Gives you a (not so) funny joke</td>
+        </tr>
+        <tr>
+          <td>*Seb, search for {item}</td>
+          <td>Searches for {item} on google</td>
+        </tr>
+        <tr>
+          <td>Seb, tell me a fact about {number}</td>
+          <td>Gives you a random fact about {number}</td>
+        </tr>
+        <tr>
+          <td>*Seb, random meme</td>
+          <td>Sends a random meme from imgflip</td>
+        </tr>
+        <tr>
+          <td>Seb, cat pic</td>
+          <td>Sends you an adorable cat picture from HTTP-Meow</td>
+        </tr>
+        <tr>
+          <td>Seb, fortune cookie</td>
+          <td>Reveal your true fate. The chinese are never wrong.</td>
+        </tr>
+        <tr>
+          <td>Seb, 8ball {question}</td>
+          <td>Test your luck.</td>
+        </tr>
+        <tr>
+          <td>Seb, trbmb</td>
+          <td>Generates a that really blank's my blank phrase</td>
+        </tr>
+        <tr>
+          <td>Seb, dog pic</td>
+          <td>Sends an adorable picture of a dog.</td>
+        </tr>
+        <tr>
+          <td>Seb, be like {name}</td>
+          <td>Generates a  be like bill image for {name}</td>
+        </tr>
+        <tr>
+          <td>*Seb, firecracker</td>
+          <td>Amazing display of fireworks!</td>
+        </tr>
+        <tr>
+          <td>Seb, yo momma</td>
+          <td>Get an epic yo momma joke.</td>
+        </tr>
+        <tr>
+          <td>Seb, echo {msg}</td>
+          <td>Seb Bot will echo whatever you want!</td>
+        </tr>
+        <tr>
+          <td>Seb, stats</td>
+          <td>Shows the bot's status</td>
+        </tr>
+        <tr>
+          <td>*Seb, image {query}</td>
+          <td>Searches for query with the flickr api</td>
+        </tr>
+        <tr>
+          <td>Seb, ping</td>
+          <td>Measures the latency of the bot</td>
+        </tr>
+        <tr>
+          <td>Seb, gif {query}</td>
+          <td>Searches for {query} on gfycat, then returns the first result</td>
+        </tr>
+        <tr>
+          <td>*Seb, ddg {query}</td>
+          <td>Searches {query} on duckduckgo and returns the first results</td>
+        </tr>
+        <tr>
+          <td>Seb, xkcd</td>
+          <td>Gets a random xkcd comic</td>
+        </tr>
+        <tr>
+          <td>Seb, news</td>
+          <td>Gets the latest NY Times article</td>
+        </tr>
+        <tr>
+          <td>Seb, crazyimg</td>
+          <td>cRaZiFys your image!</td>
+        </tr>
+      </table>
+      <br>
+      <center><a id="shownsfwbtn" style="text-decoration: none;" onclick="if (confirm('Show NSFW commands?') == true){ showNSFW(); }" class="btn">Show NSFW Commands</a></center>
+      <br>
+      <table style="display: none;" id="nsfwcmds">
+        <tr>
+          <th>Command</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td style="background-color: gold;">Seb, rule34 {query}</td>
+          <td style="background-color: gold;">Searches for {query} on rule34</td>
+        </tr>
+        <tr>
+          <td>Seb, boobs</td>
+          <td>Gets a great boob pic</td>
+        </tr>
+        <tr>
+          <td>Seb, furry</td>
+          <td>Get a great furry pic</td>
+        </tr>
+        <tr>
+          <td>*Seb, ass</td>
+          <td>Gets a great ass pic</td>
+        </tr>
+        <tr>
+          <td>*Seb, sex</td>
+          <td>Get a sexy gif</td>
+        </tr>
+      </table>
     </div>
   </div>
   <hr>
@@ -56,15 +217,6 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 <!-- Introduction menu -->
 <div class="w3-col l4">
-  <!-- About Card -->
-  <div class="w3-card w3-margin w3-margin-top">
-  <!--<img src="https://cdn.discordapp.com/attachments/395371039779192844/447254483957972993/silly_sebby.png" style="width:100%">-->
-    <div class="w3-container w3-white">
-      <h4><b>About the Developer</b></h4>
-      <p>Seb Bot is and always has been developed by SebbyTheGODKid, you can <strong><a onclick="var url = 'https://discord.gg/8MQx6J7'; window.open(url, url, url);" href="javascript:runAsyncWindowHandler();" style="text-decoration: none; color: blue;">join his discord</a></strong> to ask him questions</p>
-    </div>
-  </div><hr>
-  
   <!-- Posts -->
   <div class="w3-card w3-margin">
     <div class="w3-container w3-padding">
