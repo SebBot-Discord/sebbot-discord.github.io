@@ -1,6 +1,4 @@
- <!DOCTYPE html>
- <html>
- <head>
+<html><head>
  <title>Commands - Seb Bot</title>
  <meta charset="UTF-8">
 <meta property="image" content="https://images-ext-2.discordapp.net/external/x8JfnsVYSKcsmCINfKw0x4YTLWWbHNTrCgIuyWtxQrs/https/cdn.discordapp.com/avatars/408718297400475668/c7b9be183d4cf2029912533e3afc2e69.png">
@@ -51,7 +49,7 @@
  }
  </style>
  </head>
- <body class="w3-light-grey">
+ <body class="w3-light-grey" style="">
  
  <!-- w3-content defines a container for fixed size centered content, 
  and is wrapped around the whole page content, except for the footer in this example -->
@@ -72,8 +70,25 @@
    <div class="w3-card-4 w3-margin w3-white">
      <div>
        <p>&nbsp;&nbsp;<strong>NOTE:</strong> Commands with an asterisk ("*") in front of them are deprecated and may not work properly</p>
-       <table>
+		<br>
+    	<h1>Moderation Commands</h1>
+<table>
+         <tbody><tr>
+           <th>Command</th>
+           <th>Description</th>
+         </tr><tr>
+           <td>s!ban <user> <reason></reason></user></td>
+           <td>Bans the mentioned <user> from the server</user></td>
+         </tr>
          <tr>
+           <td>s!kick <user> <reason></reason></user></td>
+           <td>Kicks the mentioned <user> from the server</user></td>
+         </tr>
+       </tbody></table>
+		<br>
+    	<h1>Fun Commands</h1>
+       <table>
+         <tbody><tr>
            <th>Command</th>
            <th>Description</th>
          </tr>
@@ -218,8 +233,8 @@
            <td>cRaZiFys your image!</td>
          </tr>
          <tr>
-           <td>Seb, blur {img} [-size <size>]</td>
-           <td>Blurs {img} (with the optional paramater of <size>)</td>
+           <td>Seb, blur {img} [-size <size>]</size></td>
+           <td>Blurs {img} (with the optional paramater of <size>)</size></td>
          </tr>
          <tr>
            <td>Seb, merge {img1} {img2}</td>
@@ -229,12 +244,15 @@
            <td>Seb, sepia {img}</td>
            <td>Sepia {img}</td>
          </tr>
-       </table>
+       </tbody></table>
        <br>
-       <center><a id="shownsfwbtn" style="text-decoration: none;" onclick="if (confirm('Show NSFW commands?') == true){ showNSFW(); }" class="btn">Show NSFW Commands</a></center>
-       <br>
-       <table style="display: none;" id="nsfwcmds">
-         <tr>
+       <center><a id="shownsfwbtn" style="display: none;" onclick="if (confirm('Show NSFW commands?') == true){ showNSFW(); }" class="btn">Show NSFW Commands</a></center>
+       
+
+		<br>
+    	<h1>NSFW Commands</h1>
+       <table style="" id="nsfwcmds">
+         <tbody><tr>
            <th>Command</th>
            <th>Description</th>
          </tr>
@@ -262,7 +280,7 @@
            <td>*Seb, sex</td>
            <td>Get a sexy gif</td>
          </tr>
-       </table>
+       </tbody></table>
      </div>
    </div>
    <hr>
@@ -299,7 +317,7 @@
          <span class="w3-large">Github</span><br>
          <span>Seb Bot's source code</span>
        </li></a>
-       <a style="text-decoration: none;" href="#" onclick="u='https://discordapp.com/api/oauth2/authorize?client_id=408718297400475668&permissions=67160064&scope=bot';window.open(u,u,u);"><li class="w3-padding-16">
+       <a style="text-decoration: none;" href="#" onclick="u='https://discordapp.com/api/oauth2/authorize?client_id=408718297400475668&amp;permissions=67160064&amp;scope=bot';window.open(u,u,u);"><li class="w3-padding-16">
          <img src="https://vignette.wikia.nocookie.net/aura-kingdom/images/1/18/Discord_icon.png/revision/latest?cb=20170108193813" alt="Image" class="w3-left w3-margin-right" style="width:50px">
          <span class="w3-large">Invite</span><br>
          <span>Invite Seb Bot to your discord server</span>
@@ -312,3 +330,4 @@
  </div>
  
  <!-- END GRID -->
+</div></div></body></html>
