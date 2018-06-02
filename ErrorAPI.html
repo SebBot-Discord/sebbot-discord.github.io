@@ -180,11 +180,13 @@ function $_GET(param) {
 }
 function setup1(){
 	console.log(decodeURI($_GET("err")));
-	document.getElementById("error-message").innerHTML = decodeURI($_GET("err"));
+	document.getElementById("error-message").innerHTML = decodeURI($_GET("err")) || "An error ocurred";
 }
 function setup2(){
 	console.log(decodeURI($_GET("title")));
-	document.getElementById("error-title").innerHTML = decodeURI($_GET("title"));
+	var _set = decodeURI($_GET("title"));
+	document.getElementById("error-title").innerHTML = _set || "Error";
+	window.title = _set || "Error";
 }
 function setup(){
 	setup1();
