@@ -179,12 +179,12 @@ function $_GET(param) {
 	return vars;
 }
 function setup1(){
-	console.log(decodeURI($_GET("err")));
-	document.getElementById("error-message").innerHTML = decodeURI($_GET("err")) || "An error ocurred";
+	console.log(decodeURI($_GET("!")));
+	document.getElementById("error-message").innerHTML = decodeURI($_GET("!")) || "An error ocurred";
 }
 function setup2(){
-	console.log(decodeURI($_GET("title")));
-	var _set = decodeURI($_GET("title"));
+	console.log(decodeURI($_GET("^")));
+	var _set = decodeURI($_GET("^"));
 	document.getElementById("error-title").innerHTML = _set || "Error";
 	window.title = _set || "Error";
 }
