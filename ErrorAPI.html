@@ -181,12 +181,12 @@ function $_GET(param) {
 function setup1(){
 	console.log(decodeURI($_GET("!")));
 	var _set = decodeURI($_GET("!"));
-	document.getElementById("error-message").innerHTML = _set != null ? _set : "An error ocurred";
+	document.getElementById("error-message").innerHTML = _set ? _set : "An error ocurred";
 }
 function setup2(){
 	console.log(decodeURI($_GET("?")));
 	var _set = decodeURI($_GET("?"));
-	document.getElementById("error-title").innerHTML = _set != null ? _set : "Error";
+	document.getElementById("error-title").innerHTML = _set ? _set : "Error";
 	window.title = _set || "Error";
 }
 function setup(){
