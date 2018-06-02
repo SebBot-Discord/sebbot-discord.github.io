@@ -181,12 +181,20 @@ function $_GET(param) {
 function setup1(){
 	console.log(decodeURI($_GET("!")));
 	var _set = decodeURI($_GET("!"));
-	document.getElementById("error-message").innerHTML = _set ? _set : "An error ocurred";
+	var _doc = document.getElementById("error-message");
+	_doc.innerHTML = _set ? _set : "An error ocurred";
+	if (_doc.innerHTML == "null"){
+		_doc.innerHTML = "An error ocurred";
+	}
 }
 function setup2(){
 	console.log(decodeURI($_GET("?")));
 	var _set = decodeURI($_GET("?"));
-	document.getElementById("error-title").innerHTML = _set ? _set : "Error";
+	var _doc = document.getElementById("error-title");
+	_doc.innerHTML = _set ? _set : "Error";
+	if (_doc.innerHTML == "null"){
+		_doc.innerHTML = "Error";
+	}
 	window.title = _set || "Error";
 }
 function setup(){
