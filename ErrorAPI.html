@@ -179,10 +179,12 @@ function $_GET(param) {
 	return vars;
 }
 function setup1(){
-	document.getElementById("error-message").innerHTML = $_GET("err");
+	console.log(decodeURI($_GET("err")));
+	document.getElementById("error-message").innerHTML = decodeURI($_GET("err"));
 }
 function setup2(){
-	document.getElementById("error-title").innerHTML = $_GET("title");
+	console.log(decodeURI($_GET("title")));
+	document.getElementById("error-title").innerHTML = decodeURI($_GET("title"));
 }
  var particles = {
       "particles": {
