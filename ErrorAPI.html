@@ -179,10 +179,10 @@ function $_GET(param) {
 	return vars;
 }
 function setup1(){
-	document.getElementById("error-message").innerHTML = $_GET("!") || "An error ocurred";
+	document.getElementById("error-message").innerHTML = $_GET("err");
 }
 function setup2(){
-	document.getElementById("error-title").innerHTML = $_GET("@") || "Error";
+	document.getElementById("error-title").innerHTML = $_GET("title");
 }
  var particles = {
       "particles": {
