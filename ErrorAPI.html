@@ -186,6 +186,10 @@ function setup2(){
 	console.log(decodeURI($_GET("title")));
 	document.getElementById("error-title").innerHTML = decodeURI($_GET("title"));
 }
+function setup(){
+	setup1();
+	setup2();
+}
  var particles = {
       "particles": {
         "number": {
@@ -302,7 +306,7 @@ function setup2(){
 </script>
 </head>
 <body>
-<body class="permission_denied">
+<body class="permission_denied" onload="setup();">
   <div id="particles-js"></div>
   <div class="denied__wrapper">
   <h1 id="error-title" onload="setup2();">Error</h1>
